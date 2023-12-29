@@ -13,3 +13,7 @@ Packages used. UUID, FontAwesome, VITE.
 - Clone Repository
 - Console -> "Npm Install"
 - Console -> "Npm Run Dev"
+- type a task in input field
+- Click add "add task"
+- Task is written to localstorage in browser
+- Task can be edited, updated and deleted
