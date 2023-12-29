@@ -57,7 +57,7 @@ export const TodoWrapperLocalStorage = () => {
       <ToDoForm addTodo={addTodo} />
       {todos.map((todo, index) =>
         todo.isEditing ? (
-          <EditTodoForm editTodo={editTask} task={todo} />
+          <EditTodoForm editTask={editTask} task={todo} />
         ) : (
           <Todo
             task={todo}
