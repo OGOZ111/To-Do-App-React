@@ -1,8 +1,13 @@
-# React + Vite
+# To do list application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Small project to practice and demonstrate REACT JS skills of passing props correctly, and using local storage data to save a small list of tasks, and conditional rendering to display correct content.
 
-Currently, two official plugins are available:
+### Prerequisites
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Packages used. UUID, FontAwesome, VITE.
+
+### Usage
+
+- Clone Repository
+- Console -> "Npm Install"
+- Console -> "Npm Run Dev"
