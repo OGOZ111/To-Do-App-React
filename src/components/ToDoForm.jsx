@@ -3,10 +3,15 @@ import React, { useState } from "react";
 export const ToDoForm = ({ addTodo }) => {
   const [value, setValue] = useState("");
   const handleSubmit = (e) => {
-    e.preventDefault();
-    addTodo(value);
+    if (value.trim() === "") {
+      alert("Please enter a task");
+    } else {
+      e.preventDefault();
 
-    setValue("");
+      addTodo(value);
+
+      setValue("");
+    }
   };
   return (
     <form className="ToDoForm" onSubmit={handleSubmit}>

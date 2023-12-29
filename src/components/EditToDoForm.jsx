@@ -3,10 +3,13 @@ import React, { useState } from "react";
 export const EditTodoForm = ({ editTask, task }) => {
   const [value, setValue] = useState(task.task);
   const handleSubmit = (e) => {
-    e.preventDefault();
-    editTask(value, task.id);
-
-    setValue("");
+    if (value.trim() === "") {
+      alert("Please enter a task");
+    } else {
+      e.preventDefault();
+      editTask(value, task.id);
+      setValue("");
+    }
   };
   return (
     <form className="ToDoForm" onSubmit={handleSubmit}>
